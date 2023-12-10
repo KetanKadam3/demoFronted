@@ -55,7 +55,7 @@ function ShowResult({ resultData }) {
                 {/* <p>Message: {resultData.message}</p> */}
                 {/* <p>Correct Answers Count: {resultData.correctAnswersCount}</p> */}
                 <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                <h2 style={{fontSize:'26px',fontWeight:'400',fontFamily:'Inter'}}>Your Score: {resultData.score}</h2>
+                <h2 style={{fontSize:'26px',fontWeight:'400',fontFamily:'Inter'}}>Your Score: {resultData.score}{"%"}</h2>
                 <h3 style={{fontSize:'26px',fontWeight:'400',fontFamily:'Inter'}}>Result: {resultData.result}</h3>
                 </div>
             </div>
