@@ -1,0 +1,33 @@
+.result-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .result-container.passed {
+    background-color: #dff0d8; /* Green background for pass */
+  }
+  
+  .result-container.failed {
+    background-color: #f2dede; /* Red background for fail */
+  }
+  
+  .result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Animation */
+  .result-container.passed,
+  .result-container.failed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
