@@ -68,7 +68,7 @@ const navigate = useNavigate();
     };
 
     try {
-        const apiUrl = `https://rfc2rnvg-5000.inc1.devtunnels.ms/result/${testId}`;
+        const apiUrl = `http://localhost:5000/result/${testId}`;
 
         const response = await axios.post(apiUrl, data);
         const responseData = response.data;
@@ -124,7 +124,7 @@ const navigate = useNavigate();
         const test_id = decodeData?.data.testId;
 
         axios
-          .get(`https://rfc2rnvg-5000.inc1.devtunnels.ms/test/${test_id}`)
+          .get(`http://localhost:5000/test/${test_id}`)
           .then((res) => {
             const responseData = res.data.data;
             console.log(responseData[0].QuestionSet);
